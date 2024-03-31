@@ -21,7 +21,7 @@ struct ContentView: View {
     var body: some View {
         RealityView { content in
             // Add the initial RealityKit content
-            if let scene = try? await Entity(named: "Scene", in: realityKitContentBundle) {
+            if let scene = try? await Entity(named: "Cotora", in: realityKitContentBundle) {
                 content.add(scene)
             }
         } update: { content in
@@ -60,6 +60,7 @@ struct ContentView: View {
                 }
             }
         }
+
     }
 }
 
